@@ -1,3 +1,8 @@
+
+
+<h1><center>**OLHE O NOTEBOOK PARA MELHOR VISUALIZAÇÃO**</center></h1>
+
+
 <h2><center>Um Framework vetorial para a interpretação e computação estatística e probabilística
 
 <h3> Sumário </h2>
