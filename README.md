@@ -2,7 +2,7 @@
 
 <h1><center>**OLHE O NOTEBOOK PARA MELHOR VISUALIZAÇÃO**</center></h1>
 
-[!!NOTEBOOK!!](https://github.com/brunoCCOS/probest-alg-lin/trab_final.ipynb)
+[!!NOTEBOOK!!](https://github.com/brunoCCOS/probest-alg-lin/blob/master/trab_final.ipynb)
 
 <h2><center>Um Framework vetorial para a interpretação e computação estatística e probabilística
 
