@@ -17,7 +17,7 @@
 ### Probabilidade
 
 
-Probabilidade é uma medida numérica que quantifica a chance ou a possibilidade de um evento ocorrer. Denotamos a probabilidade de um evento A como P(A), onde P é a função de probabilidade.
+Probabilidade é uma medida numérica que quantifica a chance ou a possibilidade de um evento ocorrer. Denotamos a probabilidade de um evento A como $P(A)$, onde P é a função de probabilidade.
 
 
 
@@ -46,7 +46,7 @@ A partir desses axiomas, podemos deduzir várias propriedades e teoremas da teor
 
 
 
-A probabilidade condicional é a probabilidade de um evento ocorrer, dado que outro evento já ocorreu. Denotamos a probabilidade condicional de A dado B como P(A|B). A fórmula para calcular a probabilidade condicional é: P(A|B) = P(A ∩ B) / P(B)
+A probabilidade condicional é a probabilidade de um evento ocorrer, dado que outro evento já ocorreu. Denotamos a probabilidade condicional de $A$ dado $B$ como $P(A|B)$. A fórmula para calcular a probabilidade condicional é: $P(A|B) = P(A ∩ B) / P(B)$
 
 
 
@@ -57,7 +57,7 @@ A probabilidade condicional é a probabilidade de um evento ocorrer, dado que ou
 
 A regra do produto é usada para calcular a probabilidade conjunta de dois eventos A e B, ou seja, a probabilidade de ambos os eventos ocorrerem simultaneamente. A fórmula para a probabilidade conjunta é:
 
-P(A ∩ B) = P(A|B) * P(B)
+$$P(A ∩ B) = P(A|B) * P(B)$$
 
 
 
@@ -66,9 +66,7 @@ P(A ∩ B) = P(A|B) * P(B)
 
 
 A regra da soma é usada para calcular a probabilidade de um evento ocorrer, considerando diferentes cenários ou possibilidades. A fórmula para a probabilidade de um evento A é dada pela regra da soma:
-$
-P(A) = ∑ P(A ∩ Bᵢ)
-$
+$$P(A) = ∑ P(A ∩ Bᵢ)$$
 onde Bᵢ são eventos mutuamente exclusivos que cobrem todo o espaço amostral.
 
 
@@ -79,9 +77,7 @@ onde Bᵢ são eventos mutuamente exclusivos que cobrem todo o espaço amostral.
 
 O Teorema de Bayes é uma ferramenta importante na teoria das probabilidades para atualizar a probabilidade de um evento dado o conhecimento de outro evento relacionado. A fórmula do Teorema de Bayes é:
 
-$
-P(A|B) = (P(B|A) * P(A)) / P(B)
-$
+$$P(A|B) = (P(B|A) * P(A)) / P(B)$$
 
 onde P(A) e P(B) são as probabilidades marginais e P(B|A) é a probabilidade condicional.
 
@@ -167,9 +163,8 @@ Uma distribuição de probabilidade descreve a forma como os valores de uma vari
 
 A distribuição de Bernoulli modela um experimento aleatório que tem dois resultados possíveis, geralmente rotulados como sucesso (1) ou fracasso (0). A função de probabilidade de uma variável aleatória com distribuição de Bernoulli é dada por:
 
-$
-P(X = x) = p^x * (1 - p)^(1 - x)
-$
+
+$$P(X = x) = p^x * (1 - p)^(1 - x)$$
 
 onde x assume os valores 0 ou 1, e p é a probabilidade de sucesso.
 
@@ -178,10 +173,10 @@ onde x assume os valores 0 ou 1, e p é a probabilidade de sucesso.
 
 
 A distribuição binomial descreve o número de sucessos em uma sequência de experimentos independentes e identicamente distribuídos (i.i.d.) com probabilidade de sucesso p. A função de probabilidade de uma variável aleatória com distribuição binomial é dada por:
-$
-P(X = k) = C(n, k) * p^k * (1 - p)^(n - k)
-$
-onde n é o número de experimentos, k é o número de sucessos, p é a probabilidade de sucesso e C(n, k) é o coeficiente binomial.
+
+$$P(X = k) = C(n, k) * p^k * (1 - p)^(n - k)$$
+
+onde n é o número de experimentos, k é o número de sucessos, p é a probabilidade de sucesso e $C(n, k)$ é o coeficiente binomial.
 
 ##### Distribuição de Poisson
 
@@ -189,9 +184,9 @@ onde n é o número de experimentos, k é o número de sucessos, p é a probabil
 A distribuição de Poisson descreve o número de eventos que ocorrem em um intervalo de tempo ou espaço fixo, quando os eventos ocorrem independentemente com uma taxa média conhecida. A função de probabilidade de uma variável aleatória com distribuição de Poisson é dada por:
 
 
-$
-P(X = k) = (e^(-λ) * λ^k) / k!
-$
+
+$$P(X = k) = (e^(-λ) * λ^k) / k!$$
+
 
 
 onde k é o número de eventos, λ é a taxa média de ocorrência e e é a base do logaritmo natural.
@@ -206,9 +201,9 @@ onde k é o número de eventos, λ é a taxa média de ocorrência e e é a base
 A distribuição normal, também conhecida como distribuição gaussiana, é uma das distribuições mais importantes e amplamente utilizadas na teoria das probabilidades e estatística. Ela descreve muitos fenômenos naturais e possui uma forma de sino simétrica. A função densidade de probabilidade (FDP) de uma variável aleatória com distribuição normal é dada por:
 
 
-$
-f(x) = (1 / (σ * sqrt(2π))) * exp(-(x - μ)^2 / (2σ^2))
-$
+
+$$f(x) = (1 / (σ * sqrt(2π))) * exp(-(x - μ)^2 / (2σ^2))$$
+
 
 
 onde μ é a média da distribuição e σ é o desvio padrão.
@@ -242,9 +237,9 @@ plt.show()
 
 
 A distribuição exponencial descreve o tempo entre eventos em um processo de Poisson, onde os eventos ocorrem independentemente com uma taxa média λ. A função densidade de probabilidade (FDP) de uma variável aleatória com distribuição exponencial é dada por:
-$
-f(x) = λ * exp(-λx)
-$
+
+$$f(x) = λ * exp(-λx)$$
+
 onde x é o tempo entre eventos e λ é a taxa média de ocorrência.
 
 
@@ -300,9 +295,9 @@ A estatística descritiva envolve a organização, resumo e interpretação dos 
 
 
 A média é uma medida de tendência central que representa o valor médio de um conjunto de dados. Para uma amostra, a média é denotada por x-barra (x̄), enquanto que para uma população, é denotada por μ (mu). A fórmula para calcular a média amostral é:
-$
-x̄ = (x₁ + x₂ + ... + xₙ) / n
-$
+
+$$x̄ = (x₁ + x₂ + ... + xₙ) / n$$
+
 onde $x₁, x₂, ..., xₙ$ são os valores observados e n é o tamanho da amostra.
 
 #### Variância e Desvio Padrão
@@ -310,9 +305,8 @@ onde $x₁, x₂, ..., xₙ$ são os valores observados e n é o tamanho da amos
 A variância mede a dispersão dos dados em relação à média. O desvio padrão é a raiz quadrada da variância e também é uma medida de dispersão. Para uma amostra, a variância é denotada por s², enquanto que para uma população, é denotada por σ². A fórmula para calcular a variância amostral é:
 
 
-$
-s² = Σ(xᵢ - x̄)² / (n - 1)
-$
+
+$$s² = Σ(xᵢ - x̄)² / (n - 1)$$
 
 
 onde xᵢ são os valores observados, x̄ é a média amostral e n é o tamanho da amostra.
@@ -408,17 +402,17 @@ Os estimadores de máxima verossimilhança são obtidos maximizando a função d
 
 Dado um conjunto de dados observados x₁, x₂, ..., xₙ, assumindo que as observações são independentes e identicamente distribuídas (i.i.d.) de acordo com uma distribuição de probabilidade parametrizada por θ, a função de verossimilhança L(θ) é definida como o produto das funções de densidade de probabilidade (f(xᵢ; θ)) correspondentes a cada observação:
 
-$
-L(θ) = f(x₁; θ) * f(x₂; θ) * ... * f(xₙ; θ)
-$
+
+$$L(θ) = f(x₁; θ) * f(x₂; θ) * ... * f(xₙ; θ)$$
+
 
 A ideia é encontrar o valor do parâmetro θ que maximiza a função de verossimilhança, ou seja, o valor que torna os dados observados mais prováveis de acordo com a distribuição especificada por θ.
 
 Em muitos casos, é mais conveniente trabalhar com o logaritmo natural da função de verossimilhança (log-verossimilhança), que simplifica os cálculos e não altera a posição do máximo. Portanto, a log-verossimilhança é dada por:
 
-$
-log L(θ) = log f(x₁; θ) + log f(x₂; θ) + ... + log f(xₙ; θ)
-$
+
+$$log L(θ) = log f(x₁; θ) + log f(x₂; θ) + ... + log f(xₙ; θ)$$
+
 
 A estimação de máxima verossimilhança (EMV) envolve encontrar o valor de θ que maximiza a log-verossimilhança. Isso pode ser feito através de técnicas de otimização, como o método do gradiente ou métodos iterativos como o algoritmo de Newton-Raphson.
 
@@ -437,17 +431,17 @@ Uma variável aleatória pode ser vista como um vetor em um espaço vetorial. O 
 
 - **Adição**: A adição de variáveis aleatórias é realizada componente por componente. Dadas duas variáveis aleatórias X e Y, a soma das variáveis aleatórias é dada por:
 
-$
-(X + Y)(x) = X(x) + Y(x)
-$
+
+$$(X + Y)(x) = X(x) + Y(x)$$
+
 
 onde x é um valor específico da variável aleatória.
 
 - **Multiplicação por Escalar**: A multiplicação de uma variável aleatória por um escalar é feita multiplicando cada componente pela constante. Dada uma variável aleatória X e um escalar c, a multiplicação da variável aleatória por um escalar é dada por:
 
-$
-(cX)(x) = c * X(x)
-$
+
+$$(cX)(x) = c * X(x)$$
+
 
 onde x é um valor específico da variável aleatória.
 
@@ -464,10 +458,10 @@ Em estatística, um vetor aleatório é uma generalização de uma variável ale
 
 Seja X um vetor aleatório com dimensões d x 1, onde d é o número de variáveis aleatórias no vetor. Podemos definir um vetor aleatório como uma função que associa um vetor numérico a cada ponto amostral ω do espaço amostral Ω:
 
-$
-X(ω) = [X₁(ω), X₂(ω), ..., X_d(ω)]^T
-$
-onde Xᵢ(ω) é a i-ésima variável aleatória no vetor e ω é um ponto no espaço amostral.
+
+$$X(ω) = [X₁(ω), X₂(ω), ..., X_d(ω)]^T$$
+
+onde $Xᵢ(ω)$ é a i-ésima variável aleatória no vetor e ω é um ponto no espaço amostral.
 
 
 #### Distribuição Normal Vetorial
@@ -477,15 +471,15 @@ A distribuição normal multivariada (ou distribuição normal vetorial) é uma 
 
 Seja X um vetor aleatório d-dimensional com média μ e matriz de covariância Σ. A distribuição normal vetorial é denotada por:
 
-$
-X \sim N(μ, Σ)
-$
+
+$$X \sim N(μ, Σ)$$
+
 
 A função de densidade de probabilidade (PDF) da distribuição normal vetorial é dada por:
 
-$f(x; μ, Σ) = (2π)^(-d/2) * |Σ|^(-1/2) * exp(-0.5 * (x - μ)^T * Σ^(-1) * (x - μ))$
+$$f(x; μ, Σ) = (2π)^(-d/2) * |Σ|^(-1/2) * exp(-0.5 * (x - μ)^T * Σ^(-1) * (x - μ))$$
 
-onde x é o valor do vetor aleatório, μ é a média vetorial, Σ é a matriz de covariância, e |Σ| representa o determinante de Σ.
+onde x é o valor do vetor aleatório, $μ$ é a média vetorial, $Σ$ é a matriz de covariância, e $|Σ|$ representa o determinante de Σ.
 
 #### Demonstração da Distribuição Normal Vetorial
 
@@ -494,37 +488,37 @@ onde x é o valor do vetor aleatório, μ é a média vetorial, Σ é a matriz d
 
 A distribuição normal vetorial pode ser provada usando a função característica e a técnica de transformação linear. Aqui, forneceremos um esboço da prova.
 
-Dado um vetor onde cada componente é uma variável aleatória X ~ N(0, 1), a pdf da v.a é dada por:
+Dado um vetor onde cada componente é uma variável aleatória $X ~ N(0, 1)$, a pdf da v.a é dada por:
 
-\begin{align}
+$$\begin{align}
 f(x) = \frac{1}{\sigma \sqrt{2\pi}} \, e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
-\end{align}
+\end{align}$$
 
 Logo, se todas as componentes são v.a I.I.D da mesma distribuição a distribuição conjunta delas é 
 
 
-\begin{align}%\label{}
+$$\begin{align}%\label{}
 f_{\mathbf{Z}}(\mathbf{z})&=f_{Z_1, Z_2, ..., Z_n}(z_1, z_2, ..., z_n)\\
 &=\prod_{i=1}^{n} f_{Z_i}(z_i)\\
 &=\frac{1}{(2\pi)^{\frac{n}{2}}} \exp \left\{-\frac{1}{2} \sum_{i=1}^{n} z_i^2 \right\}\\
 &=\frac{1}{(2\pi)^{\frac{n}{2}}} \exp \left\{-\frac{1}{2} \mathbf{z}^T\mathbf{z} \right\}.
-\end{align}
+\end{align}$$
 
 
 
 Agora precisamos genarilizar essa formula. Considere um vetor aleatório $X$ com média $m$ e matriz de covariância $C$. Denotamos $X \sim N(m, C)$. Supomos ainda que $C$ seja uma matriz definida positiva. Essa suposição não limita a generalidade, pois sabemos que $C$ é positiva semidefinida (Teorema 6.2), portanto, $\det(C) \geq 0$. Também sabemos que $C$ é definida positiva se e somente se $\det(C) > 0$ (Teorema 6.3). Aqui, estamos excluindo o caso $\det(C) = 0$, pois podemos mostrar que podemos escrever algumas variáveis $X_i$ como combinação linear de outras, portanto, podemos removê-las do vetor sem perder informações.
 
 Da álgebra linear, sabemos que existe uma matriz $Q$ de dimensão $n \times n$ tal que:
-$Q \cdot Q^T = I$ (I é a matriz identidade)
-$C = Q \cdot D \cdot Q^T$,
+$$Q \cdot Q^T = I$$ (I é a matriz identidade)
+$$C = Q \cdot D \cdot Q^T$$,
 
 onde $D$ é uma matriz diagonal:
-$D = \begin{bmatrix}
+$$D = \begin{bmatrix}
 d_{11} & 0 & \ldots & 0 \\
 0 & d_{22} & \ldots & 0 \\
 \vdots & \vdots & \ddots & \vdots \\
 0 & 0 & \ldots & d_{nn}
-\end{bmatrix}$,
+\end{bmatrix}$$,
 
 e os $d_{ii}$ são todos positivos. Definimos ainda:
 $D_{12} = \begin{bmatrix}
@@ -739,9 +733,9 @@ plt.show()
 
 SVD é uma técnica que permite a decomposição de uma matriz em três componentes: uma matriz de vetores singulares esquerda, uma matriz de valores singulares e uma matriz de vetores singulares direita. Essa decomposição é útil para entender a estrutura dos dados e realizar operações como reconstrução, redução de dimensionalidade e filtragem de ruído.
 
-Dada uma matriz X de dimensões m × n, a SVD é dada por:
+Dada uma matriz X de dimensões $m × n$, a SVD é dada por:
 
-X = U * S * V^T
+$$X = U * S * V^T$$
 
 
 
@@ -779,23 +773,23 @@ PCA (Principal Component Analysis) e SVD (Singular Value Decomposition) estão i
 
 
 
-Dada uma matriz de dados X de dimensões n x p, onde n é o número de amostras e p é o número de variáveis, a PCA busca encontrar uma base ortogonal de p componentes principais que capture a maior variabilidade dos dados. Essa base de componentes principais é composta pelos autovetores da matriz de covariância dos dados.
+Dada uma matriz de dados X de dimensões $n x p$, onde n é o número de amostras e p é o número de variáveis, a PCA busca encontrar uma base ortogonal de p componentes principais que capture a maior variabilidade dos dados. Essa base de componentes principais é composta pelos autovetores da matriz de covariância dos dados.
 
 A matriz de covariância dos dados é dada por:
 
-$
-C = (1/n) * X^T * X
-$
 
-onde X^T é a matriz transposta de X.
+$$C = (1/n) * X^T * X$$
 
-Podemos então realizar a decomposição espectral na matriz de covariância C para obter os autovetores (V) e autovalores (λ). Os autovetores representam a direção dos componentes principais, enquanto os autovalores indicam a importância dessas direções.
+
+onde $X^T$ é a matriz transposta de $X$.
+
+Podemos então realizar a decomposição espectral na matriz de covariância C para obter os autovetores (V) e autovalores ($λ$). Os autovetores representam a direção dos componentes principais, enquanto os autovalores indicam a importância dessas direções.
 
 A matriz de projeção dos dados nos componentes principais, Z, é obtida multiplicando a matriz de dados X pelos autovetores selecionados:
 
-$
-Z = X * V
-$
+
+$$Z = X * V$$
+
 
 
 Essa matriz Z representa os dados projetados nos componentes principais. Portanto, podemos ver que a PCA pode ser interpretada como uma aplicação da SVD na matriz de covariância.
@@ -808,17 +802,17 @@ Podemos estabelecer uma relação matemática entre a PCA e a SVD ao comparar as
 
 Na PCA, a matriz de dados X pode ser decomposta como:
 
-$
-X = Z * V^T
-$
+
+$$X = Z * V^T$$
+
 
 onde Z é a matriz dos dados projetados nos componentes principais e V^T é a matriz transposta dos autovetores selecionados.
 
 Por outro lado, a SVD da matriz de dados X é dada por:
 
-$
-X = U * S * V^T
-$
+
+$$X = U * S * V^T$$
+
 
 onde U é a matriz dos autovetores esquerda, S é a matriz diagonal dos valores singulares e V^T é a matriz transposta dos autovetores direita.
 
