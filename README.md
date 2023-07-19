@@ -400,7 +400,7 @@ Um estimador é avaliado quanto às suas propriedades desejáveis, como viés (q
 
 Os estimadores de máxima verossimilhança são obtidos maximizando a função de verossimilhança, que mede a probabilidade de obter os dados observados para diferentes valores do parâmetro desconhecido. Esses estimadores são amplamente utilizados devido às suas propriedades estatísticas favoráveis.
 
-Dado um conjunto de dados observados $x₁, x₂, ..., xₙ$, assumindo que as observações são independentes e identicamente distribuídas (i.i.d.) de acordo com uma distribuição de probabilidade parametrizada por θ, a função de verossimilhança L(θ) é definida como o produto das funções de densidade de probabilidade ($f(xᵢ; θ)$) correspondentes a cada observação:
+Dado um conjunto de dados observados $x₁, x₂, ..., xₙ$, assumindo que as observações são independentes e identicamente distribuídas (i.i.d.) de acordo com uma distribuição de probabilidade parametrizada por θ, a função de verossimilhança L(θ) é definida como o produto das funções de densidade de probabilidade $f(xᵢ; θ)$ correspondentes a cada observação:
 
 
 $$L(θ) = f(x₁; θ) * f(x₂; θ) * ... * f(xₙ; θ)$$
@@ -497,12 +497,7 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}} \, e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}
 Logo, se todas as componentes são v.a I.I.D da mesma distribuição a distribuição conjunta delas é 
 
 
-$$\begin{align}%\label{}
-f_{\mathbf{Z}}(\mathbf{z})&=f_{Z_1, Z_2, ..., Z_n}(z_1, z_2, ..., z_n)\\
-&=\prod_{i=1}^{n} f_{Z_i}(z_i)\\
-&=\frac{1}{(2\pi)^{\frac{n}{2}}} \exp \left\{-\frac{1}{2} \sum_{i=1}^{n} z_i^2 \right\}\\
-&=\frac{1}{(2\pi)^{\frac{n}{2}}} \exp \left\{-\frac{1}{2} \mathbf{z}^T\mathbf{z} \right\}.
-\end{align}$$
+$$\begin{align}%\label{}f_{\mathbf{Z}}(\mathbf{z})&=f_{Z_1, Z_2, ..., Z_n}(z_1, z_2, ..., z_n)\\&=\prod_{i=1}^{n} f_{Z_i}(z_i)\\&=\frac{1}{(2\pi)^{\frac{n}{2}}} \exp \left\{-\frac{1}{2} \sum_{i=1}^{n} z_i^2 \right\}\\&=\frac{1}{(2\pi)^{\frac{n}{2}}} \exp \left\{-\frac{1}{2} \mathbf{z}^T\mathbf{z} \right\}.\end{align}$$
 
 
 
@@ -513,20 +508,10 @@ $$Q \cdot Q^T = I$$ (I é a matriz identidade)
 $$C = Q \cdot D \cdot Q^T$$,
 
 onde $D$ é uma matriz diagonal:
-$$D = \begin{bmatrix}
-d_{11} & 0 & \ldots & 0 \\
-0 & d_{22} & \ldots & 0 \\
-\vdots & \vdots & \ddots & \vdots \\
-0 & 0 & \ldots & d_{nn}
-\end{bmatrix}$$,
+$$D = \begin{bmatrix}d_{11} & 0 & \ldots & 0 \\0 & d_{22} & \ldots & 0 \\\vdots & \vdots & \ddots & \vdots \\0 & 0 & \ldots & d_{nn}\end{bmatrix}$$,
 
 e os $d_{ii}$ são todos positivos. Definimos ainda:
-$D_{12} = \begin{bmatrix}
-\sqrt{d_{11}} & 0 & \ldots & 0 \\
-0 & \sqrt{d_{22}} & \ldots & 0 \\
-\vdots & \vdots & \ddots & \vdots \\
-0 & 0 & \ldots & \sqrt{d_{nn}}
-\end{bmatrix}$,
+$$D_{12} = \begin{bmatrix}\sqrt{d_{11}} & 0 & \ldots & 0 \\0 & \sqrt{d_{22}} & \ldots & 0 \\\vdots & \vdots & \ddots & \vdots \\0 & 0 & \ldots & \sqrt{d_{nn}}\end{bmatrix}$$,
 
 de modo que $D_{12} \cdot D_{12} = D$ e $D_{12} = D_{12}^T$. Definimos também:
 $A = Q \cdot D_{12} \cdot Q^T$.
@@ -544,10 +529,10 @@ Além disso, pela Exemplo 6.12, temos:
 $\mathbb{Cov}[X] = A \cdot \mathbb{Cov}[Z] \cdot A^T = A \cdot I \cdot A^T = A \cdot A^T = C$ (já que $\mathbb{Cov}[Z] = I$).
 
 Portanto, mostramos que $X$ é um vetor aleatório com média $m$ e matriz de covariância $C$. Agora podemos usar sua inversa para encontrar a função densidade de probabilidade (PDF) de $X$. Temos:
-$f_X(x) = \frac{1}{\lvert \det(A) \rvert} \cdot f_Z(A^{-1}(x - m)) = \frac{1}{{(2\pi)^{n/2}} \sqrt{\det(C)}} \cdot \exp\left\{-\frac{1}{2}(x - m)^T \cdot C^{-1} \cdot (x - m)\right\}$.
+$$f_X(x) = \frac{1}{\lvert \det(A) \rvert} \cdot f_Z(A^{-1}(x - m)) = \frac{1}{{(2\pi)^{n/2}} \sqrt{\det(C)}} \cdot \exp\left\{-\frac{1}{2}(x - m)^T \cdot C^{-1} \cdot (x - m)\right\}$$.
 
 Para um vetor aleatório normal $X$ com média $m$ e matriz de covariância $C$, a PDF é dada por:
-$f_X(x) = \frac{1}{(2\pi)^{n/2} \sqrt{\det(C)}} \cdot \exp\left\{-\frac{1}{2}(x - m)^T\right\}$
+$$f_X(x) = \frac{1}{(2\pi)^{n/2} \sqrt{\det(C)}} \cdot \exp\left\{-\frac{1}{2}(x - m)^T\right\}$$
 
 
 
