@@ -232,9 +232,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](README_files/README_41_0.png)
-    
+​    
 
 
 ##### Distribuição Exponencial
@@ -266,9 +266,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](README_files/README_44_0.png)
-    
+​    
 
 
 ## Introdução à Estatística
@@ -343,9 +343,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](README_files/README_57_0.png)
-    
+​    
 
 
 #### Covariância e Coeficiente de Correlação
@@ -378,9 +378,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](README_files/README_60_0.png)
-    
+​    
 
 
 ### Estatística Inferencial
@@ -649,9 +649,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](README_files/README_82_0.png)
-    
+​    
 
 
 Esse código irá gerar uma visualização com vários vetores aleatórios no espaço R², onde cada coordenada representa o valor de uma variável aleatória. A dispersão dos vetores demonstra como a distribuição normal se parece no espaço vetorial de variáveis aleatórias.
@@ -676,9 +676,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](README_files/README_84_0.png)
-    
+​    
 
 
 ## PCA e SVD: Análise de Componentes Principais e Decomposição em Valores Singulares
@@ -734,9 +734,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](README_files/README_91_0.png)
-    
+​    
 
 
 ### SVD (Decomposição em Valores Singulares)
@@ -771,9 +771,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](README_files/README_95_0.png)
-    
+​    
 
 
 ### Relação entre PCA e SVD
@@ -934,9 +934,9 @@ plt.legend()
 
 
 
-    
+​    
 ![png](README_files/README_108_1.png)
-    
+​    
 
 
 
@@ -994,9 +994,9 @@ plt.show()
 ```
 
 
-    
+​    
 ![png](README_files/README_111_0.png)
-    
+​    
 
 
 ## Referências
