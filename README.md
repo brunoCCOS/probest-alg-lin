@@ -234,7 +234,7 @@ plt.show()
 ```
 
 
-![alt text](./README_files/README_41_0.png)
+![alt text](https://github.com/brunoCCOS/probest-alg-lin/blob/master/README_files/README_41_0.png)
 ​    
 
 
@@ -267,7 +267,7 @@ plt.show()
 ```
 
 
-![alt text](./README_files/README_44_0.png)
+![alt text](https://github.com/brunoCCOS/probest-alg-lin/blob/master/README_files/README_44_0.png)
 ​    
 
 
@@ -343,7 +343,7 @@ plt.show()
 ```
 
 
-![alt text](./README_files/README_57_0.png)
+![alt text](https://github.com/brunoCCOS/probest-alg-lin/blob/master/README_files/README_57_0.png)
 ​    
 
 
@@ -377,7 +377,7 @@ plt.show()
 ```
 
 
-![alt text](./README_files/README_60_0.png)
+![alt text](https://github.com/brunoCCOS/probest-alg-lin/blob/master/README_files/README_60_0.png)
 ​    
 
 
@@ -647,7 +647,7 @@ plt.show()
 ```
 
 
-![alt text](./README_files/README_82_0.png)
+![alt text](https://github.com/brunoCCOS/probest-alg-lin/blob/master/README_files/README_82_0.png)
 ​    
 
 
@@ -673,7 +673,7 @@ plt.show()
 ```
 
 
-![alt text](./README_files/README_84_0.png)
+![alt text](https://github.com/brunoCCOS/probest-alg-lin/blob/master/README_files/README_84_0.png)
 ​    
 
 
@@ -730,7 +730,7 @@ plt.show()
 ```
 
 
-![alt text](./README_files/README_91_0.png)
+![alt text](https://github.com/brunoCCOS/probest-alg-lin/blob/master/README_files/README_91_0.png)
 ​    
 
 
@@ -766,7 +766,7 @@ plt.show()
 ```
 
 
-![alt text](./README_files/README_95_0.png)
+![alt text](https://github.com/brunoCCOS/probest-alg-lin/blob/master/README_files/README_95_0.png)
 ​    
 
 
@@ -928,7 +928,7 @@ plt.legend()
 
 
 
-![alt text](./README_files/README_108_1.png)
+![alt text](https://github.com/brunoCCOS/probest-alg-lin/blob/master/README_files/README_108_1.png)
 ​    
 
 
@@ -987,7 +987,7 @@ plt.show()
 ```
 
 
-![alt text](./README_files/README_111_0.png)
+![alt text](https://github.com/brunoCCOS/probest-alg-lin/blob/master/README_files/README_111_0.png)
 ​    
 
 
