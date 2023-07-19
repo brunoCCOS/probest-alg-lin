@@ -845,7 +845,7 @@ O objetivo da regressão linear é encontrar os coeficientes que minimizam a som
 
 A função de custo da regressão linear é derivada a partir da abordagem da máxima verossimilhança. A ideia básica é encontrar os coeficientes que maximizam a probabilidade de observar os valores observados dado o modelo linear. Supomos que os erros entre os valores observados e os valores previstos sigam uma distribuição normal com média zero e variância constante. Logo é fácil ver que $ E(Y) = \theta^T x$ pelas propriedades da esperança, logo a regressão pode ser encarado como a média da distribuição de y
 
-Pelas propriedades vistas no capitulo sobre derivação de um vetor aleatório sabemos que se $Z \sim N(0,1)$ então $X = A*Z + m \sim N(m,A) $, logo como $\epsilon \sim N(0,\sigma)$ então podemos pensar em y como uma v.a normal com média $ E(Y) = \theta^T x$ e variancia $\sigma$
+Pelas propriedades vistas no capitulo sobre derivação de um vetor aleatório sabemos que se $Z \sim N(0,1)$ então $X = A*Z + m \sim N(m,A) $, logo como $\epsilon \sim N(0,\sigma)$ então podemos pensar em y como uma v.a normal com média $E(Y) = \theta^T x$ e variancia $\sigma$
 
 Dado um conjunto de dados de treinamento composto por pares de valores (x, y), onde x é o vetor de características e y é o valor observado, a probabilidade de observar os valores y dado o modelo linear é dada pela função de densidade de probabilidade (PDF) da distribuição normal:
 
@@ -853,15 +853,15 @@ $P(y|x, \theta) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y - \theta^Tx)^2}{2\sigm
 
 onde $\theta$ é o vetor de coeficientes e $\sigma$ é o desvio padrão dos erros. A função de verossimilhança é o produto das probabilidades individuais de cada valor observado. Como é mais conveniente maximizar a função de verossimilhança, tomamos o logaritmo da função de verossimilhança para obter a função de log-verossimilhança:
 
-$ L(\theta) = \prod_{i=1}^{n} P(y|x, \theta)$
+$$L(\theta) = \prod_{i=1}^{n} P(y|x, \theta)$$
 
-$\log L(\theta) = -\frac{n}{2}\log(2\pi) - n\log\sigma - \frac{1}{2\sigma^2}\sum_{i=1}^{n}(y_i - \theta^Tx_i)^2$
+$$\log L(\theta) = -\frac{n}{2}\log(2\pi) - n\log\sigma - \frac{1}{2\sigma^2}\sum_{i=1}^{n}(y_i - \theta^Tx_i)^2$$
 
 onde n é o número de observações. O objetivo é encontrar o vetor de coeficientes $\theta$ que maximiza a função de log-verossimilhança.
 
 A função de custo da regressão linear é definida como o negativo da função de log-verossimilhança, multiplicado por -1 para transformar o problema de maximização em minimização:
 
-$J(\theta) = \frac{1}{2}\sum_{i=1}^{n}(y_i - \theta^Tx_i)^2$
+$$J(\theta) = \frac{1}{2}\sum_{i=1}^{n}(y_i - \theta^Tx_i)^2$$
 
 Essa é a função de custo que queremos minimizar para encontrar os coeficientes ótimos da regressão linear.
 
@@ -940,25 +940,25 @@ A regressão ridge, também conhecida como regularização de Tikhonov, é uma e
 
 Na regressão ridge, adicionamos um termo de penalidade que encolhe os coeficientes em direção a zero:
 
-$J(\theta) = \frac{1}{2}\sum_{i=1}^{n}(y_i - \theta^Tx_i)^2 + \lambda\sum_{j=1}^{p}\theta_j^2$
+$$J(\theta) = \frac{1}{2}\sum_{i=1}^{n}(y_i - \theta^Tx_i)^2 + \lambda\sum_{j=1}^{p}\theta_j^2$$
 
 onde $\lambda$ é o parâmetro de regularização e p é o número de características. O termo de penalidade $\lambda\sum_{j=1}^{p}\theta_j^2$ desencoraja coeficientes grandes, reduzindo efetivamente o impacto da multicolinearidade.
 
 A solução da regressão ridge pode ser obtida através da derivação da função de custo em relação aos coeficientes $\theta$ e igualando a zero:
 
-$\nabla J(\theta) = X^T(X\theta - y) + \lambda \theta = 0$
+$$\nabla J(\theta) = X^T(X\theta - y) + \lambda \theta = 0$$
 
 Simplificando a equação:
 
-$X^TX\theta + \lambda \theta = X^Ty$
+$$X^TX\theta + \lambda \theta = X^Ty$$
 
 Rearranjando os termos:
 
-$(X^TX + \lambda I)\theta = X^Ty$
+$$(X^TX + \lambda I)\theta = X^Ty$$
 
 Para obter a solução ótima para a regressão ridge, resolvemos para $\theta$ isolando-o no lado esquerdo da equação:
 
-$\theta = (X^TX + \lambda I)^{-1}X^Ty$
+$$\theta = (X^TX + \lambda I)^{-1}X^Ty$$
 
 Esses são os coeficientes $\theta$ que minimizam a função de custo para a regressão ridge.
 
