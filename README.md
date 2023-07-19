@@ -35,8 +35,8 @@ Em probabilidade, trabalhamos com um espaço amostral, denotado por Ω, que é o
 A teoria das probabilidades é fundamentada em três axiomas:
 
 1. **Axioma da não-negatividade**: Para qualquer evento A, a probabilidade de A é um número não negativo: P(A) ≥ 0.
-2. **Axioma da aditividade**: Para qualquer sequência de eventos mutuamente exclusivos A₁, A₂, ..., a probabilidade da união dos eventos é igual à soma das probabilidades individuais: P(A₁ ∪ A₂ ∪ ...) = P(A₁) + P(A₂) + ...
-3. **Axioma da normalização**: A probabilidade do espaço amostral completo Ω é igual a 1: P(Ω) = 1.
+2. **Axioma da aditividade**: Para qualquer sequência de eventos mutuamente exclusivos $A₁, A₂, ...,$ a probabilidade da união dos eventos é igual à soma das probabilidades individuais: P(A₁ ∪ A₂ ∪ ...) = P(A₁) + P(A₂) + ...
+3. **Axioma da normalização**: A probabilidade do espaço amostral completo $Ω$ é igual a 1: $P(Ω) = 1$.
 
 A partir desses axiomas, podemos deduzir várias propriedades e teoremas da teoria das probabilidades.
 
@@ -67,7 +67,7 @@ $$P(A ∩ B) = P(A|B) * P(B)$$
 
 A regra da soma é usada para calcular a probabilidade de um evento ocorrer, considerando diferentes cenários ou possibilidades. A fórmula para a probabilidade de um evento A é dada pela regra da soma:
 $$P(A) = ∑ P(A ∩ Bᵢ)$$
-onde Bᵢ são eventos mutuamente exclusivos que cobrem todo o espaço amostral.
+onde $Bᵢ$ são eventos mutuamente exclusivos que cobrem todo o espaço amostral.
 
 
 
@@ -79,7 +79,7 @@ O Teorema de Bayes é uma ferramenta importante na teoria das probabilidades par
 
 $$P(A|B) = (P(B|A) * P(A)) / P(B)$$
 
-onde P(A) e P(B) são as probabilidades marginais e P(B|A) é a probabilidade condicional.
+onde $P(A)$ e $P(B)$ são as probabilidades marginais e $P(B|A)$ é a probabilidade condicional.
 
 
 ### Variáveis Aleatórias
@@ -112,7 +112,7 @@ Uma variável aleatória contínua pode assumir qualquer valor em um intervalo c
 A função densidade de probabilidade deve satisfazer as seguintes propriedades:
 
 1. **Não-negatividade**: A densidade de probabilidade é não negativa para todos os valores de x: $f(x) ≥ 0$.
-2. **Normalização**: A área sob a curva da densidade de probabilidade é igual a 1: $∫ f(x) dx = 1$, onde a integral é realizada sobre todos os valores de x.
+2. **Normalização**: A área sob a curva da densidade de probabilidade é igual a 1: $∫ f(x) dx = 1$, onde a integral é realizada sobre todos os valores de $x$.
 
 A partir da função densidade de probabilidade, podemos calcular a função de distribuição acumulada (FDA) de uma variável aleatória contínua, que fornece a probabilidade acumulada de obter um valor menor ou igual a um determinado valor.
 
@@ -126,7 +126,7 @@ A esperança (valor esperado) de uma variável aleatória é uma medida numéric
 
 Para uma variável aleatória contínua, a esperança é calculada como a integral ponderada dos valores possíveis, multiplicados pelas densidades de probabilidade correspondentes.
 
-Os momentos de uma variável aleatória são medidas estatísticas que descrevem sua distribuição. O momento de ordem r é dado por $E[X^r]$ para uma variável aleatória X.
+Os momentos de uma variável aleatória são medidas estatísticas que descrevem sua distribuição. O momento de ordem r é dado por $E[X^r]$ para uma variável aleatória $X$.
 
 
 
@@ -236,11 +236,11 @@ plt.show()
 ##### Distribuição Exponencial
 
 
-A distribuição exponencial descreve o tempo entre eventos em um processo de Poisson, onde os eventos ocorrem independentemente com uma taxa média λ. A função densidade de probabilidade (FDP) de uma variável aleatória com distribuição exponencial é dada por:
+A distribuição exponencial descreve o tempo entre eventos em um processo de Poisson, onde os eventos ocorrem independentemente com uma taxa média $λ$. A função densidade de probabilidade (FDP) de uma variável aleatória com distribuição exponencial é dada por:
 
 $$f(x) = λ * exp(-λx)$$
 
-onde x é o tempo entre eventos e λ é a taxa média de ocorrência.
+onde $x$ é o tempo entre eventos e $λ$ é a taxa média de ocorrência.
 
 
 
@@ -309,7 +309,7 @@ A variância mede a dispersão dos dados em relação à média. O desvio padrã
 $$s² = Σ(xᵢ - x̄)² / (n - 1)$$
 
 
-onde xᵢ são os valores observados, x̄ é a média amostral e n é o tamanho da amostra.
+onde $xᵢ$ são os valores observados, $x̄$ é a média amostral e $n$ é o tamanho da amostra.
 
 
 
@@ -386,9 +386,9 @@ Um estimador é uma função ou estatística calculada a partir dos dados da amo
 
 Alguns estimadores comuns incluem:
 
-- **Média Amostral**: O estimador da média populacional é a média amostral, x̄.
-- **Variância Amostral**: O estimador da variância populacional é a variância amostral, s².
-- **Covariância Amostral**: O estimador da covariância populacional é a covariância amostral, sxy.
+- **Média Amostral**: O estimador da média populacional é a média amostral, $x̄$.
+- **Variância Amostral**: O estimador da variância populacional é a variância amostral, $s²$.
+- **Covariância Amostral**: O estimador da covariância populacional é a covariância amostral, $sxy$.
 
 Um estimador é avaliado quanto às suas propriedades desejáveis, como viés (quão próximo ele está do valor verdadeiro do parâmetro), consistência (se converge para o valor verdadeiro à medida que o tamanho da amostra aumenta) e eficiência (quão precisamente ele estima o parâmetro).
 
@@ -400,7 +400,7 @@ Um estimador é avaliado quanto às suas propriedades desejáveis, como viés (q
 
 Os estimadores de máxima verossimilhança são obtidos maximizando a função de verossimilhança, que mede a probabilidade de obter os dados observados para diferentes valores do parâmetro desconhecido. Esses estimadores são amplamente utilizados devido às suas propriedades estatísticas favoráveis.
 
-Dado um conjunto de dados observados x₁, x₂, ..., xₙ, assumindo que as observações são independentes e identicamente distribuídas (i.i.d.) de acordo com uma distribuição de probabilidade parametrizada por θ, a função de verossimilhança L(θ) é definida como o produto das funções de densidade de probabilidade (f(xᵢ; θ)) correspondentes a cada observação:
+Dado um conjunto de dados observados $x₁, x₂, ..., xₙ$, assumindo que as observações são independentes e identicamente distribuídas (i.i.d.) de acordo com uma distribuição de probabilidade parametrizada por θ, a função de verossimilhança L(θ) é definida como o produto das funções de densidade de probabilidade ($f(xᵢ; θ)$) correspondentes a cada observação:
 
 
 $$L(θ) = f(x₁; θ) * f(x₂; θ) * ... * f(xₙ; θ)$$
@@ -429,7 +429,7 @@ No contexto da estatística, podemos considerar as variáveis aleatórias como v
 
 Uma variável aleatória pode ser vista como um vetor em um espaço vetorial. O espaço vetorial das variáveis aleatórias possui duas principais operações: adição e multiplicação por um escalar.
 
-- **Adição**: A adição de variáveis aleatórias é realizada componente por componente. Dadas duas variáveis aleatórias X e Y, a soma das variáveis aleatórias é dada por:
+- **Adição**: A adição de variáveis aleatórias é realizada componente por componente. Dadas duas variáveis aleatórias $X$ e $Y$, a soma das variáveis aleatórias é dada por:
 
 
 $$(X + Y)(x) = X(x) + Y(x)$$
@@ -443,7 +443,7 @@ onde x é um valor específico da variável aleatória.
 $$(cX)(x) = c * X(x)$$
 
 
-onde x é um valor específico da variável aleatória.
+onde $x$ é um valor específico da variável aleatória.
 
 
 ### Vetor Aleatório
@@ -456,12 +456,12 @@ Em estatística, um vetor aleatório é uma generalização de uma variável ale
 
 #### Definição Matemática
 
-Seja X um vetor aleatório com dimensões d x 1, onde d é o número de variáveis aleatórias no vetor. Podemos definir um vetor aleatório como uma função que associa um vetor numérico a cada ponto amostral ω do espaço amostral Ω:
+Seja $X$ um vetor aleatório com dimensões $d x 1$, onde d é o número de variáveis aleatórias no vetor. Podemos definir um vetor aleatório como uma função que associa um vetor numérico a cada ponto amostral $ω$ do espaço amostral $Ω$:
 
 
 $$X(ω) = [X₁(ω), X₂(ω), ..., X_d(ω)]^T$$
 
-onde $Xᵢ(ω)$ é a i-ésima variável aleatória no vetor e ω é um ponto no espaço amostral.
+onde $Xᵢ(ω)$ é a i-ésima variável aleatória no vetor e $ω$ é um ponto no espaço amostral.
 
 
 #### Distribuição Normal Vetorial
@@ -469,7 +469,7 @@ onde $Xᵢ(ω)$ é a i-ésima variável aleatória no vetor e ω é um ponto no 
 
 A distribuição normal multivariada (ou distribuição normal vetorial) é uma das distribuições mais importantes para vetores aleatórios. Uma distribuição normal vetorial é caracterizada por sua média vetorial e sua matriz de covariância.
 
-Seja X um vetor aleatório d-dimensional com média μ e matriz de covariância Σ. A distribuição normal vetorial é denotada por:
+Seja $X$ um vetor aleatório d-dimensional com média $μ$ e matriz de covariância $Σ$. A distribuição normal vetorial é denotada por:
 
 
 $$X \sim N(μ, Σ)$$
@@ -479,7 +479,7 @@ A função de densidade de probabilidade (PDF) da distribuição normal vetorial
 
 $$f(x; μ, Σ) = (2π)^(-d/2) * |Σ|^(-1/2) * exp(-0.5 * (x - μ)^T * Σ^(-1) * (x - μ))$$
 
-onde x é o valor do vetor aleatório, $μ$ é a média vetorial, $Σ$ é a matriz de covariância, e $|Σ|$ representa o determinante de Σ.
+onde x é o valor do vetor aleatório, $μ$ é a média vetorial, $Σ$ é a matriz de covariância, e $|Σ|$ representa o determinante de $Σ$.
 
 #### Demonstração da Distribuição Normal Vetorial
 
