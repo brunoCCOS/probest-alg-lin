@@ -483,9 +483,7 @@ $
 
 A função de densidade de probabilidade (PDF) da distribuição normal vetorial é dada por:
 
-$
-f(x; μ, Σ) = (2π)^(-d/2) * |Σ|^(-1/2) * exp(-0.5 * (x - μ)^T * Σ^(-1) * (x - μ))
-$
+$f(x; μ, Σ) = (2π)^(-d/2) * |Σ|^(-1/2) * exp(-0.5 * (x - μ)^T * Σ^(-1) * (x - μ))$
 
 onde x é o valor do vetor aleatório, μ é a média vetorial, Σ é a matriz de covariância, e |Σ| representa o determinante de Σ.
 
@@ -503,6 +501,7 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}} \, e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}
 \end{align}
 
 Logo, se todas as componentes são v.a I.I.D da mesma distribuição a distribuição conjunta delas é 
+
 
 \begin{align}%\label{}
 f_{\mathbf{Z}}(\mathbf{z})&=f_{Z_1, Z_2, ..., Z_n}(z_1, z_2, ..., z_n)\\
