@@ -166,9 +166,11 @@ Uma distribuição de probabilidade descreve a forma como os valores de uma vari
 
 
 A distribuição de Bernoulli modela um experimento aleatório que tem dois resultados possíveis, geralmente rotulados como sucesso (1) ou fracasso (0). A função de probabilidade de uma variável aleatória com distribuição de Bernoulli é dada por:
+
 $$
 P(X = x) = p^x * (1 - p)^(1 - x)
 $$
+
 onde x assume os valores 0 ou 1, e p é a probabilidade de sucesso.
 
 ##### Distribuição Binomial
@@ -232,7 +234,7 @@ plt.show()
 ```
 
 
-![png](./README_files/README_41_0.png)
+![alt text](./README_files/README_41_0.png)
 ​    
 
 
@@ -265,7 +267,7 @@ plt.show()
 ```
 
 
-![png](./README_files/README_44_0.png)
+![alt text](./README_files/README_44_0.png)
 ​    
 
 
@@ -341,7 +343,7 @@ plt.show()
 ```
 
 
-![png](./README_files/README_57_0.png)
+![alt text](./README_files/README_57_0.png)
 ​    
 
 
@@ -375,7 +377,7 @@ plt.show()
 ```
 
 
-![png](./README_files/README_60_0.png)
+![alt text](./README_files/README_60_0.png)
 ​    
 
 
@@ -645,7 +647,7 @@ plt.show()
 ```
 
 
-![png](./README_files/README_82_0.png)
+![alt text](./README_files/README_82_0.png)
 ​    
 
 
@@ -671,7 +673,7 @@ plt.show()
 ```
 
 
-![png](./README_files/README_84_0.png)
+![alt text](./README_files/README_84_0.png)
 ​    
 
 
@@ -728,7 +730,7 @@ plt.show()
 ```
 
 
-![png](./README_files/README_91_0.png)
+![alt text](./README_files/README_91_0.png)
 ​    
 
 
@@ -764,7 +766,7 @@ plt.show()
 ```
 
 
-![png](./README_files/README_95_0.png)
+![alt text](./README_files/README_95_0.png)
 ​    
 
 
@@ -926,7 +928,7 @@ plt.legend()
 
 
 
-![png](./README_files/README_108_1.png)
+![alt text](./README_files/README_108_1.png)
 ​    
 
 
@@ -985,7 +987,7 @@ plt.show()
 ```
 
 
-![png](./README_files/README_111_0.png)
+![alt text](./README_files/README_111_0.png)
 ​    
 
 
