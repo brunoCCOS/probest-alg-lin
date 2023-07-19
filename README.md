@@ -66,9 +66,9 @@ P(A ∩ B) = P(A|B) * P(B)
 
 
 A regra da soma é usada para calcular a probabilidade de um evento ocorrer, considerando diferentes cenários ou possibilidades. A fórmula para a probabilidade de um evento A é dada pela regra da soma:
-$$
+$
 P(A) = ∑ P(A ∩ Bᵢ)
-$$
+$
 onde Bᵢ são eventos mutuamente exclusivos que cobrem todo o espaço amostral.
 
 
@@ -79,9 +79,9 @@ onde Bᵢ são eventos mutuamente exclusivos que cobrem todo o espaço amostral.
 
 O Teorema de Bayes é uma ferramenta importante na teoria das probabilidades para atualizar a probabilidade de um evento dado o conhecimento de outro evento relacionado. A fórmula do Teorema de Bayes é:
 
-$$
+$
 P(A|B) = (P(B|A) * P(A)) / P(B)
-$$
+$
 
 onde P(A) e P(B) são as probabilidades marginais e P(B|A) é a probabilidade condicional.
 
@@ -167,9 +167,9 @@ Uma distribuição de probabilidade descreve a forma como os valores de uma vari
 
 A distribuição de Bernoulli modela um experimento aleatório que tem dois resultados possíveis, geralmente rotulados como sucesso (1) ou fracasso (0). A função de probabilidade de uma variável aleatória com distribuição de Bernoulli é dada por:
 
-$$
+$
 P(X = x) = p^x * (1 - p)^(1 - x)
-$$
+$
 
 onde x assume os valores 0 ou 1, e p é a probabilidade de sucesso.
 
@@ -178,9 +178,9 @@ onde x assume os valores 0 ou 1, e p é a probabilidade de sucesso.
 
 
 A distribuição binomial descreve o número de sucessos em uma sequência de experimentos independentes e identicamente distribuídos (i.i.d.) com probabilidade de sucesso p. A função de probabilidade de uma variável aleatória com distribuição binomial é dada por:
-$$
+$
 P(X = k) = C(n, k) * p^k * (1 - p)^(n - k)
-$$
+$
 onde n é o número de experimentos, k é o número de sucessos, p é a probabilidade de sucesso e C(n, k) é o coeficiente binomial.
 
 ##### Distribuição de Poisson
@@ -189,9 +189,9 @@ onde n é o número de experimentos, k é o número de sucessos, p é a probabil
 A distribuição de Poisson descreve o número de eventos que ocorrem em um intervalo de tempo ou espaço fixo, quando os eventos ocorrem independentemente com uma taxa média conhecida. A função de probabilidade de uma variável aleatória com distribuição de Poisson é dada por:
 
 
-$$
+$
 P(X = k) = (e^(-λ) * λ^k) / k!
-$$
+$
 
 
 onde k é o número de eventos, λ é a taxa média de ocorrência e e é a base do logaritmo natural.
@@ -206,9 +206,9 @@ onde k é o número de eventos, λ é a taxa média de ocorrência e e é a base
 A distribuição normal, também conhecida como distribuição gaussiana, é uma das distribuições mais importantes e amplamente utilizadas na teoria das probabilidades e estatística. Ela descreve muitos fenômenos naturais e possui uma forma de sino simétrica. A função densidade de probabilidade (FDP) de uma variável aleatória com distribuição normal é dada por:
 
 
-$$
+$
 f(x) = (1 / (σ * sqrt(2π))) * exp(-(x - μ)^2 / (2σ^2))
-$$
+$
 
 
 onde μ é a média da distribuição e σ é o desvio padrão.
@@ -242,9 +242,9 @@ plt.show()
 
 
 A distribuição exponencial descreve o tempo entre eventos em um processo de Poisson, onde os eventos ocorrem independentemente com uma taxa média λ. A função densidade de probabilidade (FDP) de uma variável aleatória com distribuição exponencial é dada por:
-$$
+$
 f(x) = λ * exp(-λx)
-$$
+$
 onde x é o tempo entre eventos e λ é a taxa média de ocorrência.
 
 
@@ -300,9 +300,9 @@ A estatística descritiva envolve a organização, resumo e interpretação dos 
 
 
 A média é uma medida de tendência central que representa o valor médio de um conjunto de dados. Para uma amostra, a média é denotada por x-barra (x̄), enquanto que para uma população, é denotada por μ (mu). A fórmula para calcular a média amostral é:
-$$
+$
 x̄ = (x₁ + x₂ + ... + xₙ) / n
-$$
+$
 onde $x₁, x₂, ..., xₙ$ são os valores observados e n é o tamanho da amostra.
 
 #### Variância e Desvio Padrão
@@ -310,9 +310,9 @@ onde $x₁, x₂, ..., xₙ$ são os valores observados e n é o tamanho da amos
 A variância mede a dispersão dos dados em relação à média. O desvio padrão é a raiz quadrada da variância e também é uma medida de dispersão. Para uma amostra, a variância é denotada por s², enquanto que para uma população, é denotada por σ². A fórmula para calcular a variância amostral é:
 
 
-$$
+$
 s² = Σ(xᵢ - x̄)² / (n - 1)
-$$
+$
 
 
 onde xᵢ são os valores observados, x̄ é a média amostral e n é o tamanho da amostra.
@@ -408,17 +408,17 @@ Os estimadores de máxima verossimilhança são obtidos maximizando a função d
 
 Dado um conjunto de dados observados x₁, x₂, ..., xₙ, assumindo que as observações são independentes e identicamente distribuídas (i.i.d.) de acordo com uma distribuição de probabilidade parametrizada por θ, a função de verossimilhança L(θ) é definida como o produto das funções de densidade de probabilidade (f(xᵢ; θ)) correspondentes a cada observação:
 
-$$
+$
 L(θ) = f(x₁; θ) * f(x₂; θ) * ... * f(xₙ; θ)
-$$
+$
 
 A ideia é encontrar o valor do parâmetro θ que maximiza a função de verossimilhança, ou seja, o valor que torna os dados observados mais prováveis de acordo com a distribuição especificada por θ.
 
 Em muitos casos, é mais conveniente trabalhar com o logaritmo natural da função de verossimilhança (log-verossimilhança), que simplifica os cálculos e não altera a posição do máximo. Portanto, a log-verossimilhança é dada por:
 
-$$
+$
 log L(θ) = log f(x₁; θ) + log f(x₂; θ) + ... + log f(xₙ; θ)
-$$
+$
 
 A estimação de máxima verossimilhança (EMV) envolve encontrar o valor de θ que maximiza a log-verossimilhança. Isso pode ser feito através de técnicas de otimização, como o método do gradiente ou métodos iterativos como o algoritmo de Newton-Raphson.
 
@@ -437,17 +437,17 @@ Uma variável aleatória pode ser vista como um vetor em um espaço vetorial. O 
 
 - **Adição**: A adição de variáveis aleatórias é realizada componente por componente. Dadas duas variáveis aleatórias X e Y, a soma das variáveis aleatórias é dada por:
 
-$$
+$
 (X + Y)(x) = X(x) + Y(x)
-$$
+$
 
 onde x é um valor específico da variável aleatória.
 
 - **Multiplicação por Escalar**: A multiplicação de uma variável aleatória por um escalar é feita multiplicando cada componente pela constante. Dada uma variável aleatória X e um escalar c, a multiplicação da variável aleatória por um escalar é dada por:
 
-$$
+$
 (cX)(x) = c * X(x)
-$$
+$
 
 onde x é um valor específico da variável aleatória.
 
@@ -464,9 +464,9 @@ Em estatística, um vetor aleatório é uma generalização de uma variável ale
 
 Seja X um vetor aleatório com dimensões d x 1, onde d é o número de variáveis aleatórias no vetor. Podemos definir um vetor aleatório como uma função que associa um vetor numérico a cada ponto amostral ω do espaço amostral Ω:
 
-$$
+$
 X(ω) = [X₁(ω), X₂(ω), ..., X_d(ω)]^T
-$$
+$
 onde Xᵢ(ω) é a i-ésima variável aleatória no vetor e ω é um ponto no espaço amostral.
 
 
@@ -477,15 +477,15 @@ A distribuição normal multivariada (ou distribuição normal vetorial) é uma 
 
 Seja X um vetor aleatório d-dimensional com média μ e matriz de covariância Σ. A distribuição normal vetorial é denotada por:
 
-$$
+$
 X \sim N(μ, Σ)
-$$
+$
 
 A função de densidade de probabilidade (PDF) da distribuição normal vetorial é dada por:
 
-$$
+$
 f(x; μ, Σ) = (2π)^(-d/2) * |Σ|^(-1/2) * exp(-0.5 * (x - μ)^T * Σ^(-1) * (x - μ))
-$$
+$
 
 onde x é o valor do vetor aleatório, μ é a média vetorial, Σ é a matriz de covariância, e |Σ| representa o determinante de Σ.
 
@@ -850,19 +850,19 @@ Pelas propriedades vistas no capitulo sobre derivação de um vetor aleatório s
 
 Dado um conjunto de dados de treinamento composto por pares de valores (x, y), onde x é o vetor de características e y é o valor observado, a probabilidade de observar os valores y dado o modelo linear é dada pela função de densidade de probabilidade (PDF) da distribuição normal:
 
-$$P(y|x, \theta) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y - \theta^Tx)^2}{2\sigma^2}}$$
+$P(y|x, \theta) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y - \theta^Tx)^2}{2\sigma^2}}$
 
 onde $\theta$ é o vetor de coeficientes e $\sigma$ é o desvio padrão dos erros. A função de verossimilhança é o produto das probabilidades individuais de cada valor observado. Como é mais conveniente maximizar a função de verossimilhança, tomamos o logaritmo da função de verossimilhança para obter a função de log-verossimilhança:
 
-$$ L(\theta) = \prod_{i=1}^{n} P(y|x, \theta)$$
+$ L(\theta) = \prod_{i=1}^{n} P(y|x, \theta)$
 
-$$\log L(\theta) = -\frac{n}{2}\log(2\pi) - n\log\sigma - \frac{1}{2\sigma^2}\sum_{i=1}^{n}(y_i - \theta^Tx_i)^2$$
+$\log L(\theta) = -\frac{n}{2}\log(2\pi) - n\log\sigma - \frac{1}{2\sigma^2}\sum_{i=1}^{n}(y_i - \theta^Tx_i)^2$
 
 onde n é o número de observações. O objetivo é encontrar o vetor de coeficientes $\theta$ que maximiza a função de log-verossimilhança.
 
 A função de custo da regressão linear é definida como o negativo da função de log-verossimilhança, multiplicado por -1 para transformar o problema de maximização em minimização:
 
-$$J(\theta) = \frac{1}{2}\sum_{i=1}^{n}(y_i - \theta^Tx_i)^2$$
+$J(\theta) = \frac{1}{2}\sum_{i=1}^{n}(y_i - \theta^Tx_i)^2$
 
 Essa é a função de custo que queremos minimizar para encontrar os coeficientes ótimos da regressão linear.
 
@@ -941,25 +941,25 @@ A regressão ridge, também conhecida como regularização de Tikhonov, é uma e
 
 Na regressão ridge, adicionamos um termo de penalidade que encolhe os coeficientes em direção a zero:
 
-$$J(\theta) = \frac{1}{2}\sum_{i=1}^{n}(y_i - \theta^Tx_i)^2 + \lambda\sum_{j=1}^{p}\theta_j^2$$
+$J(\theta) = \frac{1}{2}\sum_{i=1}^{n}(y_i - \theta^Tx_i)^2 + \lambda\sum_{j=1}^{p}\theta_j^2$
 
 onde $\lambda$ é o parâmetro de regularização e p é o número de características. O termo de penalidade $\lambda\sum_{j=1}^{p}\theta_j^2$ desencoraja coeficientes grandes, reduzindo efetivamente o impacto da multicolinearidade.
 
 A solução da regressão ridge pode ser obtida através da derivação da função de custo em relação aos coeficientes $\theta$ e igualando a zero:
 
-$$\nabla J(\theta) = X^T(X\theta - y) + \lambda \theta = 0$$
+$\nabla J(\theta) = X^T(X\theta - y) + \lambda \theta = 0$
 
 Simplificando a equação:
 
-$$X^TX\theta + \lambda \theta = X^Ty$$
+$X^TX\theta + \lambda \theta = X^Ty$
 
 Rearranjando os termos:
 
-$$(X^TX + \lambda I)\theta = X^Ty$$
+$(X^TX + \lambda I)\theta = X^Ty$
 
 Para obter a solução ótima para a regressão ridge, resolvemos para $\theta$ isolando-o no lado esquerdo da equação:
 
-$$\theta = (X^TX + \lambda I)^{-1}X^Ty$$
+$\theta = (X^TX + \lambda I)^{-1}X^Ty$
 
 Esses são os coeficientes $\theta$ que minimizam a função de custo para a regressão ridge.
 
